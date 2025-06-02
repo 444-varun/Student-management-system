@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASUS Sign-up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            margin: 0 auto;
+        }
+        input {
+            padding: 10px;
+            width: 250px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .secondary-btn {
+            background-color: #28a745;
+        }
+        .secondary-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register Here</h1>
+        <form action="RegisterServlet" method="post" autocomplete="off">
+            <table>
+                <tr><td>Enter Name:</td><td><input type="text" name="userName" placeholder="Enter Username" required autocomplete="off"></td></tr>
+                <tr><td>Enter Email:</td><td><input type="text" name="UserEmail" placeholder="Enter Email" required autocomplete="off"></td></tr>
+                <tr><td>Enter Phone:</td><td><input type="text" name="UserPh" placeholder="Enter Phone" autocomplete="off"></td></tr>
+                <tr><td>Enter Password:</td><td><input type="password" name="Password" placeholder="Enter Password" required autocomplete="off"></td></tr>
+                <tr><td colspan="2" align="center"><button type="submit">Register</button></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

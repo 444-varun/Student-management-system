@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            font-size: 16px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .update-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .update-btn:hover {
+            background-color: #218838;
+        }
+        .back-btn {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Update Your Profile</h1>
+        <form action="updateServlets" method="post" autocomplete="off">
+            <table>
+                <tr>
+                    <td><b>Enter New Name:</b></td>
+                    <td><input type="text" name="userName" placeholder="Enter new Name" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><b>Enter New Email:</b></td>
+                    <td><input type="text" name="userEmail" placeholder="Enter new Email" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><b>Enter New Phone:</b></td>
+                    <td><input type="text" name="userPh" placeholder="Enter new Phone" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><b>Enter New Password:</b></td>
+                    <td><input type="text" name="Password" placeholder="Enter new Password" autocomplete="off">
+                    <input type='hidden' name='userID' value=id>
+                    </td>
+                </tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" name = "action" value="update-All">Update</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+               <form action="Credentials" method="post" style="margin-top: 10px;">
+    <button type="submit" style="background-color: #007bff; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px;">
+        🔙 Back
+    </button>
+</form>
+    </div>
+
+</body>
+</html>
